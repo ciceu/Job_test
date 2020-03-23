@@ -21,9 +21,6 @@ import java.util.UUID;
 @Component
 public class DeleteTaskFromTaskLibraryUseCase extends UseCase<DeleteTaskFromTaskLibraryUseCase.InputValues, DeleteTaskFromTaskLibraryUseCase.OutputValues> {
 
-    private TasksLibraryPort tasksLibraryPort;
-    private TaskPort taskPort;
-    private TeacherPort teacherPort;
 
     public DeleteTaskFromTaskLibraryUseCase(TasksLibraryPort tasksLibraryPort, TaskPort taskPort, TeacherPort teacherPort) {
         this.tasksLibraryPort = tasksLibraryPort;
