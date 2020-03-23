@@ -48,7 +48,7 @@ public class DeleteTaskFromTaskLibraryUseCase extends UseCase<DeleteTaskFromTask
                 throw new TaskNotFoundException();
             taskPort.deleteById(task.getId());
         });
-        log.debug("Task deleted successfully!");
+        
         return new OutputValues("Task deleted successfully!");
     }
 
